@@ -72,6 +72,21 @@ class ProductDB
         return $statement->execute();
     }
 
+    public function search($key)
+    {
+        $sql = "SELECT * FROM product WHERE `name` LIKE '%$key%'";
+        $stmt = $this->connection->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+        $products = [];
+        foreach ($result as $row) {
+            $product = new Product($row['name'], $row['image'], $row['price'], $row['status'], $row['category_id']);
+            $product->id = $row['product_id'];
+            $products[] = $product;
+        }
+        return $products;
+    }
+
 
 
 }

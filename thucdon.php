@@ -63,7 +63,7 @@ $productLau = mysqli_query($conn,"SELECT * FROM product WHERE category_id = 12 "
  			 							<b class="ten"><?php echo $value['name'] ?></b>
  			 						</div>
  			 						<div class="duoi">
- 			 							<!-- Mussel with tomato sauce, wine -->
+ 			 							<a href="action-cart.php?id=<?php echo $value['product_id']?>"><i title="Thêm vào giỏ hàng" class="fa fa-shopping-bag"></i></a>
  			 						</div>
  			 					</div>
  			 				</div>
@@ -119,7 +119,7 @@ $productLau = mysqli_query($conn,"SELECT * FROM product WHERE category_id = 12 "
  			 							<b class="ten"><?php echo $value['name'] ?></b>
  			 						</div>
  			 						<div class="duoi">
- 			 							<!-- Mussel with tomato sauce, wine -->
+ 			 							<a href="action-cart.php?id=<?php echo $value['product_id']?>"><i title="Thêm vào giỏ hàng" class="fa fa-shopping-bag"></i></a>
  			 						</div>
  			 					</div>
  			 				</div>
@@ -175,7 +175,7 @@ $productLau = mysqli_query($conn,"SELECT * FROM product WHERE category_id = 12 "
  			 							<b class="ten"><?php echo $value['name'] ?></b>
  			 						</div>
  			 						<div class="duoi">
- 			 							<!-- Mussel with tomato sauce, wine -->
+ 			 							<a href="action-cart.php?id=<?php echo $value['product_id']?>"><i title="Thêm vào giỏ hàng" class="fa fa-shopping-bag"></i></a>
  			 						</div>
  			 					</div>
  			 				</div>

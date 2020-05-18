@@ -528,6 +528,9 @@ session_start();
                           case 'editProduct':
                               $product->editProduct();
                               break;
+                              case 'search':
+                              $product->search();
+                              break;
                           // -------------------------end product--------------------------------------------?
                           case 'addBanner':
                               $banner->addBanner();

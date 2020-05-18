@@ -9,30 +9,6 @@ $productSushi = mysqli_query($conn,"SELECT * FROM product WHERE category_id = 8 
 $productCom = mysqli_query($conn,"SELECT * FROM product WHERE category_id = 11 ");
 $productLau = mysqli_query($conn,"SELECT * FROM product WHERE category_id = 12 ");
 
-// if(isset($_GET['id'])){
-// 		$id = $_GET['id'];
-// 		$productss = mysqli_query($conn,"SELECT * FROM product ");
-// 		$limit = 4;
-// 		$total = mysqli_num_rows($productss);
-// 		$page = ceil($total/$limit);
-// 		(isset($_GET['page'])) ? $curent_page = $_GET['page']: $curent_page=1;
-// 		$start = ($curent_page - 1)*$limit;
-// 		$product = mysqli_query($conn,"SELECT * FROM product WHERE status = 1 LIMIT $start,$limit");
-// 	}
-// 	else{
-// 		$limit = 4;
-// 		$productss = mysqli_query($conn,"SELECT * FROM product WHERE status = 1");
-// 		$total = mysqli_num_rows($productss);
-// 		$page = ceil($total/$limit);
-// 		(isset($_GET['page'])) ? $curent_page = $_GET['page']: $curent_page=1;
-// 		$start = ($curent_page - 1)*$limit;
-// 		$product = mysqli_query($conn,"SELECT * FROM product WHERE status = 1 LIMIT $start,$limit");
-
-// 	}
-// var_dump($product);
-// die();
-
-
  ?>
  	
 <div class="slide">
@@ -72,6 +48,7 @@ $productLau = mysqli_query($conn,"SELECT * FROM product WHERE category_id = 12 "
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
+
 		 
 
  
@@ -117,7 +94,7 @@ $productLau = mysqli_query($conn,"SELECT * FROM product WHERE category_id = 12 "
  		<div class="tieudect text-xs-center fontroboto">
 
  			<a href="" data-monan="*">All </a>
- 			<a href="id=3" data-monan=".sang">Sushi</a>
+ 			<a href="" data-monan=".sang">Sushi</a>
  			<a href="" data-monan=".trua">SET Cơm</a>
  			<a href="" data-monan=".toi">BUFFET Lẩu</a> 
  		</div>
@@ -125,8 +102,6 @@ $productLau = mysqli_query($conn,"SELECT * FROM product WHERE category_id = 12 "
  			 <div class="container">
  			 	<div class="row nhieumon">
  			 		<?php foreach ($productSushi as $value): ?>
- 			 			
- 			 		
  			 		<div class="col-xs-12 col-sm-6 col-md-4   motmon sang">
  			 			<div class="row">
  			 				<div class="col-xs-3 col-sm-4">

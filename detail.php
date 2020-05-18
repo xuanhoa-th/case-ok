@@ -44,23 +44,16 @@ $product = mysqli_fetch_assoc($products);
                                 <div class="transportation">
                                     <!-- <span>item with Free Delivery</span> -->
                                 </div>
+                                Giá:
                                 <span class="price">
                                     <ins><?php echo $product['price'] ?>.vnđ</ins>
                                    
                                 </span>
-                               <!--  <div class="quantity">
-                                    <h6 class="quantity-title">Số lượng:</h6>
-                                    <div class="buttons-added">
-                                        <input type="text" value="1" title="Qty" class="input-text qty text" size="1">
-                                        <a href="#" class="sign plus"><i class="fa fa-plus"></i></a>
-                                        <a href="#" class="sign minus"><i class="fa fa-minus"></i></a>
-                                    </div>
+                              
+                               <!--  <div class="single-add-to-cart">
+                                    <a href="action-cart.php?id=<?php echo $product['id']?>" class="btn-add-to-cart">Thêm vào giỏ hàng</a>
+                                    
                                 </div> -->
-                                <div class="single-add-to-cart">
-                                    <a href="#" class="btn-add-to-cart">Thêm vào giỏ hàng</a>
-                                    <!-- <a href="#" class="compare"><i class="flaticon-refresh-square-arrows"></i>Compare</a>
-                                    <a href="#" class="wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i>Wishlist</a> -->
-                                </div>
                             </div>
                         </div>
                         

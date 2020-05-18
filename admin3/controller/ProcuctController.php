@@ -95,4 +95,16 @@ class ProcuctController
             echo "<script>window.location='./index.php?page=listProduct'</script>";
         }
     }
+    public function search(){
+        if (isset($_REQUEST['key'])){
+            $key = $_REQUEST['key'];
+            $product = $this->ProductDB->search($key);
+            include "view/product/listProduct.php";
+        } else {
+            $product = $this->ProductDB->getAllProduct();
+            include "view/product/listProduct.php";
+        }
+        }
+
+
 }
